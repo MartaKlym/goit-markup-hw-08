@@ -1,0 +1,38 @@
+.nav__list,
+.lists {
+  text-decoration: none;
+  list-style: none;
+  padding-top: 0px;
+}
+.nav__list {
+  display: flex;
+}
+.nav__list .nav__item:not(:first-child) {
+  margin-left: 50px;
+}
+.header__contacts {
+  margin-left: auto;
+  display: flex;
+}
+.phone {
+  margin-left: 50px;
+}
+.nav__active-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-gray-color);
+
+  @include transition();
+
+  &:hover,
+  &:focus{
+  color: var(--secondary-color);
+  }
+}
+
+.nav__item {
+  position: relative;
+}
