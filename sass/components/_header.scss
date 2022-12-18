@@ -1,8 +1,10 @@
 .container .header-nav {
   max-width: 480px;
   width: 100%;
+  padding-top: 16px;
   display: flex;
   align-items: center;
+  
   
     @media screen and (min-width: 768px) {
       max-width: 768px;

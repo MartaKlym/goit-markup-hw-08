@@ -1,67 +1,78 @@
-.benefits {
+.container .benefits__lists{
   padding-top: 60px;
+  padding-bottom: 60px;
 
-
-  @media screen and (min-width: 768px) {
-    @include centered(flex, start-end, stretch);
-    flex-wrap: wrap;
-    flex-basis: calc(100%/2 - 30px);
-    gap: 30px;
-}
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    padding-bottom: 0;
-    flex-wrap: nowrap;
-  }
+    padding-bottom: 94px;
 }
-  .benefits__list { 
-    list-style: none;
 
-    &:not(:last-child){
-      margin-bottom: 30px;
-  }
- 
-  @media screen and (min-width: 768px){
-      margin: 15px;
-      width: calc((100% - 4 * 15px) / 2);
-      text-align: center;
+}
+.benefits__icons {
+
+  @include centered(flex, center, center);
+  max-width: 450px;
+  width: 100%;
+  height: 120px;
+  background-color: var(--background-color);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+      width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-      margin-top: 0;
-      margin-left: 0;
-      margin-bottom: 0;
-      width: 100% ;
-      text-align: center;
+      width: 270px;
+  }
+}
 
-      &:not(:last-child){
+.benefits__lists {
+  @media screen and (min-width: 768px) {
+      @include centered(flex, start-end, stretch);
+      flex-wrap: wrap;
+      flex-basis: calc(100%/2 - 30px);
+      gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      gap: 0;
+  }
+}
+
+.benefits__list {
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 30px;
+  &:last-child {
+      margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+      width: 354px;
+      margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+      width: 270px;
+
+      &:not(:last-child) {
           margin-right: 30px;
       }
   }
-} 
-  .benefits__icons {
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-  }
-  .benefits__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-  .benefits__txt {
-    padding-top: 10px;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--primary-lightgray-color);
-    width: 270px;
-  }
-  
+}
+
+.benefits__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.benefits__txt {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-lightgray-color);
+}
