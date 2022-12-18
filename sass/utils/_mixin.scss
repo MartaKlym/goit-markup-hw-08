@@ -14,3 +14,11 @@
 @mixin transition($type: background-color, $time: 250ms, $animation-type: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition: $type $time $animation-type;
 }
+@mixin centered($position, $justify-position, $align-position: stetch) {
+    display: $position;
+    justify-content: $justify-position;
+    align-items: $align-position;
+}
+@mixin animation($value: background-color) {
+    transition: $value 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
