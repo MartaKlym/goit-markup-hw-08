@@ -23,7 +23,7 @@
 
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a
           class="logo animate__animated animate__bounce"
@@ -56,21 +56,69 @@
             +38 096 111 11 11</a
           >
         </div>
+        <button type="button" class="burger"
+            data-menu-button 
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="перемикач мобільного меню">
+            <use class="burger__icon--open" href="./images/symbol-defs.svg#icon-menu-mobile"></use>
+            <use class="burger__icon--close" href="./images/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+            <div class="mobile-menu__nav">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a class= "mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class= "mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class= "mobile-menu__link" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-menu__address">
+              <ul class="">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__address--blue" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__address--grey" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mobile-menu__social--flex">
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
       </div>
-    </header> -->
+    </div>
+    </header>
 
     <main>
       <!--Hero-->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__txt">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!--Benefits-->
-      <section class="benefits">
+      <!-- <section class="benefits">
         <div class="container">
           <ul class="benefits__lists">
             <li class="benefits__list">
@@ -122,7 +170,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--About-->
       <!-- <section class="about">
         <div class="container">
