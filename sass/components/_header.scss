@@ -4,61 +4,58 @@
   padding-top: 16px;
   display: flex;
   align-items: center;
-  
-  
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-      width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+
+.nav__list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    @include centered(flex, center, center);
+
+    .portfolio:visited {
+      color: var(--secondary-color);
     }
-  
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
+    .selected {
+      color: var(--secondary-color);
+      position: relative;
+    }
+
+    .selected::after {
+      content: "";
+      display: block;
+      background-color: var(--secondary-color);
+      height: 4px;
       width: 100%;
+      border-radius: 2px;
+      top: 45px;
+      position: absolute;
     }
   }
 
-    .nav__list .nav__item {
-      display: none;
-    @media screen and (min-width: 768px) {
-      @include centered(flex, center, center);
-
-          .portfolio:visited {
-            color: var(--secondary-color);
-          }
-          .selected {
-            color: var(--secondary-color);
-            position: absolute;
-          }
-          
-          .selected::after {
-            content: "";
-            display: block;
-            background-color: var(--secondary-color);
-            height: 4px;
-            width: 100%;
-            border-radius: 2px;
-            top: 45px;
-            position: absolute;
-          }
-        
-    }
-  
-    @media screen and (min-width: 1200px) {
-      @include centered(flex, center, center);
-      margin-left: 93px;
-      
-    }
+  @media screen and (min-width: 1200px) {
+    @include centered(flex, center, center);
+    margin-left: 93px;
   }
-  .nav-item {
-    @media screen and (min-width: 768px){
+}
 
+.nav__list-item {
+  @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-right: 50px;
     }
-  }}
+  }
+}
 
-  
-  
 // .header {
 //     padding-top: 24px;
 //     padding-bottom: 25px;
@@ -94,7 +91,7 @@
 //   .header__details:focus {
 //     color: var(--secondary-color);
 //   }
-  
+
 //   .header__icon {
 //     margin-right: 10px;
 //     fill: currentColor;
@@ -108,4 +105,3 @@
 //     list-style: none;
 //     font-style: normal;
 //   }
-

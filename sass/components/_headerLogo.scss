@@ -1,5 +1,5 @@
 .header .logo {
-    margin-right: 92px;
+    margin-right: auto;
   }
   .logo {
     font-family: "Raleway", sans-serif;
@@ -9,7 +9,11 @@
     letter-spacing: 0.03em;
     color: #000000;
     text-decoration: none;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
   .logo__web {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
