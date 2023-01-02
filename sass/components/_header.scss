@@ -37,8 +37,11 @@
       height: 4px;
       width: 100%;
       border-radius: 2px;
-      top: 45px;
+      top: 53px;
       position: absolute;
+      @media screen and (min-width: 1200px) {
+        top: 38px;
+      }
     }
   }
 
