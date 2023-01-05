@@ -27,9 +27,8 @@
 
 .clients__lists {
   @include centered(flex, center);
-
-  flex-basis: calc((100% - 60px) / 2);
   flex-wrap: wrap;
+  flex-basis: calc((100% - 60px) / 2);
   gap: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -44,6 +43,9 @@
 }
 
 .clients__list {
+  flex-basis: calc((100% - 60px) / 2);
+  flex-wrap: wrap;
+  gap: 30px;
   max-width: 210px;
   max-height: 92px;
 
