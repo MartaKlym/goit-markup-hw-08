@@ -44,7 +44,10 @@
   margin-top: 20px;
 
   @media screen and (min-width: 1200px) {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
     text-decoration: none;
     text-decoration: none;
     list-style: none;
